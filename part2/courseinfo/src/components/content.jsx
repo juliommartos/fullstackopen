@@ -21,7 +21,7 @@ const Content = ({ course: { parts } }) => {
         </tfoot>
       </table>
     </div>
-  )
+  );
 };
 
 export default Content;
