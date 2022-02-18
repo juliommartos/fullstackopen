@@ -1,18 +1,16 @@
 import React from 'react';
 
-const Persons = ({ persons, onchange }) => {
-  
-  const result = persons.filter(person => person.name === onchange)
+const Persons = props => {
+  const {persons} = props;
   
   return (
-    result.map((person) => (
+    persons.map((person) => (
       <p key={person.id}>
         {person.name}
         {' '}
         {person.number}
       </p>
     ))
-
   );
 };
 

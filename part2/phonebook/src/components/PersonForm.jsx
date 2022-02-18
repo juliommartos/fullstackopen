@@ -1,8 +1,8 @@
 import React from 'react';
 
-const PersonForm = ({ onchange }) => {
-  const [addContact, handleNameChange, handlePhoneChange] = onchange;
-
+const PersonForm = props => {
+  const [addContact, handleNameChange, handlePhoneChange] = props.onchange;
+  
   return (
     <form onSubmit={addContact}>
       <div>
